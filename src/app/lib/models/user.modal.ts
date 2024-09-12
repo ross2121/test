@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const Customer=new mongoose.Schema({
+const User=new mongoose.Schema({
     clerkid:{
         type:String,
         require:true,
@@ -64,4 +64,4 @@ const Customer=new mongoose.Schema({
     },
     {timestamps:true}
 )
-export default mongoose.model('Customer',Customer);
+export default mongoose.model('User',User);
